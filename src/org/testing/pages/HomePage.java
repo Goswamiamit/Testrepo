@@ -12,14 +12,14 @@ public class HomePage {
     public void homepagenavigation() {
         String title = driver.getTitle();
         System.out.println(title);
-        //if (title = homepage) {
-           // System.out.println("Login Successful");
-        //} else
-          //  driver.navigate().to("https://www.linkedin.com/home");
+        if (title.isEmpty()) {
+             System.out.println("Login Successful");
+        } else
+          driver.navigate().to("https://www.linkedin.com/home");
 
 
 
     }
 
     }
-}
+
